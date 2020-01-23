@@ -1,0 +1,21 @@
+{
+  "name": "mern-stack-shopx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"cd front-end && npm run build",
+    "install-client":"cd front-end && npm install",
+    "heroku-postbuild":"npm run install-client && npm run build",
+    "server": "npm start --prefix back-end",
+    "client": "npm start --prefix front-end",
+    "dev": "concurrently \"npm run server \" \"npm run client\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
