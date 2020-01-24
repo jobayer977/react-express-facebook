@@ -31,7 +31,7 @@ mongoose.connect(process.env.MONGODB_URI,
 )
 
 if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('../front-end/build'))
+	app.use(express.static('../../front-end/build'))
 }
 
 //SERVER UP
