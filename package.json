@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"cd back-end && node server.js",
-    "build":"cd front-end && npm run build",
-    "install-client":"cd front-end && npm install",
-    "heroku-postbuild":"npm run install-client && npm run build",
+    "start": "cd back-end && node server.js",
+    "build": "cd front-end && npm run build",
+    "install-client": "cd front-end && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "server": "npm start --prefix back-end",
     "client": "npm start --prefix front-end",
     "dev": "concurrently \"npm run server \" \"npm run client\" "
@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "concurrently": "^5.0.2",
+    "express": "^4.17.1",
     "nodemon": "^2.0.2"
   }
 }
