@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"cd app/back-end && node server.js",
+    "start":"node server.js --prefix back-end",
     "build":"cd front-end && npm run build",
     "install-client":"cd front-end && npm install",
     "heroku-postbuild":"npm run install-client && npm run build",
