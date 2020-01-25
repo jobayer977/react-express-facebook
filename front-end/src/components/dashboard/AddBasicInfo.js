@@ -108,7 +108,7 @@ const AddBasicInfo = ({updateProfile,history}) => {
 			                        </div>
 		                        </div>
 		                    </div>
-		                    <input type="submit" value="Submit"/>
+		                   <a href="/about"><input type="submit" value="Submit"/></a>
 		                </form>
 		            </div>
 		        </div>

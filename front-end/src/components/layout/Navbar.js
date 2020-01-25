@@ -18,7 +18,7 @@ const Navbar = (props) => {
                 <li><Link to="/home">Home</Link></li>
                 <li><Link to="/people">People</Link></li>
                 <li><Link to="/profile">Profile</Link></li>
-                <li><Link to="#" onClick={props.logout}>Logout</Link></li>
+                <li><a href="/" onClick={props.logout}>Logout</a></li>
             </ul>
           </nav>
 	 </nav>
