@@ -24,28 +24,28 @@ const Navbar = (props) => {
 	 </nav>
  	)
 
+
  	const guestNav = (
 		 <nav className="main-nav">
 		  	<form onSubmit={e => onSubmit(e)}>
                 <input 
                 	type="email" 
-                	placeholder="Email" 
+                	placeholder="Email t@t.com" 
                 	name="email"
                 	onChange={(e) => onChange(e)}
                 	value={formData.email}
                 	/>
                 <input 
                 	type="password" 
-                	placeholder="Password" 
+                	placeholder="Password 123456" 
                 	name="password"
                 	onChange={(e) => onChange(e)}
                 	value={formData.password}
                 	/>
-
                 <input type="submit" value="Login"/>
             </form>
 		
-            
+           
           </nav>
 		)
  	
