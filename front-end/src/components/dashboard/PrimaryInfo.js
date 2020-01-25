@@ -49,7 +49,7 @@ const PrimaryInfo = (props) => {
 		               {
 			              props.profileState && props.profileState.profile == null ? 
 			              (<Fragment>
-			                <a href="/add-basic-info">Create Profile</a>  
+			                <Link to="/add-basic-info">Create Profile</Link>  
 			              </Fragment>):
 			              (<Fragment>
 			                <Link to="/profile">Timeline</Link>
