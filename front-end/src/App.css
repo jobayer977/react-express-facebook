@@ -37,7 +37,7 @@ input:focus {
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #e9ebee;
+    background-color: #edf2f6;
 }
 .nothing-found {
     color: #607D8B;
@@ -141,8 +141,24 @@ header{
     font-weight: 400;
     transition: 0.4s all;
 }
-
-.main-nav  input[type="submit"]:hover {
+.primary-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #ff5e3a;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0px;
+    margin-top: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: 0.4s all ease;
+    border: 1px solid #ff5e3a;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+.main-nav  input[type="submit"]:hover , .primary-btn:hover {
     background: #ffff;
     color: #ff5e3a;
 }

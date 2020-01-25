@@ -1,4 +1,4 @@
-import React,{Fragment,useState} from 'react';
+import React,{Fragment,useState,useEffect} from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {Link,Redirect} from 'react-router-dom'
@@ -10,28 +10,20 @@ const Navbar = (props) => {
 	 	email:'',
 	 	password:''
 	 })
+   
  const authNav = (
  	<nav className="main-nav">
 	    <nav className="main-nav">
             <ul>
-                <li><Link to="/">Home</Link></li>
+                <li><Link to="/home">Home</Link></li>
                 <li><Link to="/people">People</Link></li>
                 <li><Link to="/profile">Profile</Link></li>
-                <li><Link to="/setting">Setting</Link></li>
                 <li><Link to="#" onClick={props.logout}>Logout</Link></li>
             </ul>
           </nav>
 	 </nav>
  	)
- const LoginPageNav = (
- 	<nav className="main-nav">
-	    <nav className="main-nav">
-            <ul>
-              <li>loinpage</li>
-            </ul>
-          </nav>
-	 </nav>
- 	)
+
  	const guestNav = (
 		 <nav className="main-nav">
 		  	<form onSubmit={e => onSubmit(e)}>

@@ -70,7 +70,8 @@ const PrimaryInfo = (props) => {
 }
 
 PrimaryInfo.propTypes = {
-	profileData: PropTypes.object
+	profileData: PropTypes.object,
+	authState : PropTypes.object.isRequired
 }
  const mapStateToPops = (state) => ({
  	authState : state.authState,

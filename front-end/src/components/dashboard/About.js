@@ -173,7 +173,7 @@ const About = ({getProfile,profileState,profileState:{profile,loading}}) => {
 		        <div className="col-md-12">
 		          <h5 className="sub-title">BASIC INFORMATION</h5>
 		          <div className="add-fill">
-		            <Link to="/basicinfo"><i className="fa fa-edit"></i> Edit Basic info</Link>
+		            <Link to="/add-basic-info"><i className="fa fa-edit"></i> Edit Basic info</Link>
 		          </div>
 		          <div className="about-item">
 		            <div className="cotact-info">
@@ -217,11 +217,13 @@ const About = ({getProfile,profileState,profileState:{profile,loading}}) => {
 
 About.propTypes = {
 	profileState : PropTypes.object.isRequired,
-	getProfile : PropTypes.func.isRequired
+	getProfile : PropTypes.func.isRequired,
+	authState : PropTypes.object.isRequired
 }
 
 const mapStateToProps = (state) => ({
-	profileState: state.profileState
+	profileState: state.profileState,
+	authState:state.authState
 })
 
 

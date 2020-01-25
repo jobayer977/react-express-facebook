@@ -56,7 +56,7 @@ const Timeline = ({getProfile,addPost,getPosts,authState,profileState,postState:
                   
                 }
                
-                <p><i className="fa fa-wifi"></i>Following to 360 people</p>
+               
               </div>
             </div>
             <div className="col-md-8">

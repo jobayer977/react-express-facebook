@@ -22,8 +22,7 @@ const UserIntroItem = ({profileState}) => {
                 {profileState.profile.homeTown && profileState.profile.homeTown}</p>):""
               
             }
-           
-            <p><i className="fa fa-wifi"></i>Following to 360 people</p>
+
           </div>
     </Fragment>
   )

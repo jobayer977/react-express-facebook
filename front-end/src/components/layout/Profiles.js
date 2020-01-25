@@ -19,7 +19,7 @@ const Profiles = ({authState:{user},updateConnection,getProfiles,profileState:{p
 		    <h1 className="primary-title"><i className="fa fa-users"></i>Connection</h1>
 		     <div className="row">
 		     {
-		     	profiles && profiles.filter(x => x.user._id !== (user && user._id)).map((profile,i) => (
+		     	profiles && profiles.filter(x => x.user && x.user._id !== (user && user._id && user._id)).map((profile,i) => (
 		     	
 			 		<div className="col-md-6" key={i}>
 			          <div className="connect">

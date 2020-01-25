@@ -61,8 +61,9 @@ const Login = (props) => {
 	                        </div>
 	                    </div>
 	                    <input type="submit" value="login"/>
+	                     <Link className="primary-btn" to="/">back</Link>
 	                </form>
-	                <Link to="/">back</Link>
+	           
 	            </div>
 	        </div>
 	      </div>
