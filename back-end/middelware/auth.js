@@ -5,7 +5,7 @@ const SECRET_TOKEN = process.env.JWT_SECRET
 module.exports = function (req,res,next) {
 	// GET THE TOKEN FROM HEADER
 	const getToken = req.header('x-auth-token')
-
+	
 	// CHECK IF NO TOKEN
 	if (!getToken) {
 		return res.status(401).json({msg:'No toke in Header'})
