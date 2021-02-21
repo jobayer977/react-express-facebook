@@ -2,4 +2,4 @@
 Clone Facebook 
 
 
- Nodejs, mongodb, express and react
+ Nodejs, mongodb, express and react Redux
